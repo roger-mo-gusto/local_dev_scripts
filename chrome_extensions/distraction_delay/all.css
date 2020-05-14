@@ -1,0 +1,33 @@
+#distraction_delay_overlay {
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  width: 100vw !important;
+  width: 100% !important;
+  height: 100vh !important;
+  height: 100% !important;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999999999999999 !important;
+
+  background: #191B1C;
+  color: #84ACF2;
+  text-align: center;
+}
+
+#distraction_delay_ticker {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 55px;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1 }
+  98% { opacity: 0 }
+  100% { opacity: 1 }
+}

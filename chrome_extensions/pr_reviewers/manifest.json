@@ -1,0 +1,17 @@
+  {
+    "name": "PR Reviewers",
+    "version": "1.0",
+    "description": "Add PR Reviewers",
+    "manifest_version": 2,
+    "content_scripts": [
+      {
+        "matches": [
+          "*://github.com/Gusto/zenpayroll/pull/*"
+        ],
+        "js": [
+          "background.js"
+        ],
+        "run_at": "document_end"
+      }
+    ]
+  }

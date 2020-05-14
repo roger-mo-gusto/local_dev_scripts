@@ -1,0 +1,27 @@
+  {
+    "name": "Distraction Delayer",
+    "version": "2.0",
+    "description": "Delays your favorite websites by a few seconds",
+    "manifest_version": 2,
+    "content_scripts": [
+      {
+        "matches": [
+          "*://www.reddit.com/*",
+          "*://slickdeals.net/*",
+          "*://amazon.com/*",
+          "*://smile.amazon.com/*",
+          "*://reddit.com/*",
+          "*://youtube.com/*",
+          "https://www.youtube.com/*",
+          "*://yelp.com/*",
+          "https://www.yelp.com/*"
+        ],
+        "js": [
+          "background.js"
+        ],
+        "css": [
+          "all.css"
+        ]
+      }
+    ]
+  }
