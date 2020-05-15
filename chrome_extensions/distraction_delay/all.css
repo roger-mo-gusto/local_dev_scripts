@@ -1,5 +1,6 @@
 #distraction_delay_overlay {
   display: flex;
+  flex-direction: column;
   align-items: center;
   align-content: center;
 
@@ -30,4 +31,36 @@
   0% { opacity: 1 }
   98% { opacity: 0 }
   100% { opacity: 1 }
+}
+
+#skip_butt {
+  padding: 10px;
+  background-color: #191B1C;
+  border: 2px solid #84ACF2;
+  border-radius: 5px;
+  position: absolute;
+  top: 60vh;
+}
+
+#skip_butt.get-wild {
+  animation: getWild 2.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes getWild {
+  0% {
+    transform: rotate(0deg) scale(1.0);
+    top: 60vh;
+  }
+  10% {
+    transform: rotate(0deg) scale(1.0);
+    top: 60vh;
+  }
+  50% {
+    transform: rotate(50000deg) scale(10.0);
+  }
+  100% {
+    transform: rotate(100000deg) scale(0);
+    top: 50vh;
+  }
 }

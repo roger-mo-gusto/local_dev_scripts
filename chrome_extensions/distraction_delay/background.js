@@ -1,13 +1,23 @@
 (() => {
   createOverlay = () => {
-    console.log("Creating Overlay");
-    overlay = document.createElement("div");
+    console.log('Creating Overlay');
+    overlay = document.createElement('div');
     overlay.id = 'distraction_delay_overlay';
 
     ticker = document.createElement('h1');
     ticker.id = 'distraction_delay_ticker';
 
+    skipButt = document.createElement('button');
+    skipButt.id = 'skip_butt';
+    skipButt.textContent = 'Skip';
+
+    skipButt.addEventListener('click', function() {
+      document.getElementById('skip_butt').textContent = 'GET PLAYEEEEEDDD';
+      document.getElementById('skip_butt').classList.add('get-wild');
+    })
+
     overlay.appendChild(ticker);
+    overlay.appendChild(skipButt);
     document.body.appendChild(overlay);
   }
 
@@ -26,13 +36,10 @@
     }, 1000);
   }
 
-
-
   let ticker;
   let timeLeft = 15;
   let tickerInterval;
   let overlay;
-  let pageActive = true;
   createOverlay();
   tickTimer();
 })();
