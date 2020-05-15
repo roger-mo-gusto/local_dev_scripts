@@ -23,7 +23,7 @@ Manage your website list in the `manifest.json` file. [Here](https://github.com/
 
 ### Install Instructions
 - Clone this repo or download it as a zip
-- Navigate to your [Chrome Extensions](chrome://extensions)
+- Navigate to your Chrome Extensions (chrome://extensions)
 - Enable `Developer mode` at the top right if not already enabled
 - Click on `Load unpacked` at the top left
 - Select the folder of the extension you want to load
