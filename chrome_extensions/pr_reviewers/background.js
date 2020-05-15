@@ -89,10 +89,9 @@
 
       if (signedInUser) {
         const prAuthor = document.querySelector('#partial-discussion-header .author').textContent;
-        console.log(`author: ${prAuthor}`);
+
         if (signedInUser.textContent.trim() == prAuthor.trim()) {
           removeExistingReviewersFromList();
-          console.log(REVIEWERS);
 
           if (REVIEWERS.length > 0) {
             createButton();
