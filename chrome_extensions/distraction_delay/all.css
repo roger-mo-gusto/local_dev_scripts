@@ -41,6 +41,7 @@
   border-radius: 5px;
   position: absolute;
   top: 60vh;
+  cursor: pointer;
 }
 
 #skip_butt.get-wild {

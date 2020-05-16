@@ -12,7 +12,7 @@
     skipButt.textContent = 'Skip';
 
     skipButt.addEventListener('click', function() {
-      document.getElementById('skip_butt').textContent = 'GET PLAYEEEEEDDD';
+      document.getElementById('skip_butt').textContent = 'NAH';
       document.getElementById('skip_butt').classList.add('get-wild');
     })
 
